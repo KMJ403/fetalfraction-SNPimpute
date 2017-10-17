@@ -2,7 +2,7 @@
 ###########################################################################################################################
 # maf-filtering.py version 1.0
 # Python 2.7.6
-# author: minjeong kim
+# author: Minjeong Kim
 # This code is for maf filtering.
 # * command example : python maf-filtering_v1.py -vcf imputation_chrN.vcf -maf 0.07
 # -vcf : Input the imputed vcf file.

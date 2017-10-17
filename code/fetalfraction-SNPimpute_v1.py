@@ -2,7 +2,7 @@
 ###########################################################################################################################
 # fetalfraction-SNPimpute.py version 1.0
 # Python 2.7.6
-# Author: minjeong kim
+# Author: Minjeong Kim
 # This code is for estimating fetal fraction using imputed PLINK(ped/map) files.
 # * Naming rules : sampleID.pileup / chrN.ped / chrN.map (For ped and map files, they must have the format 'chrN.map' and 'chrN.ped')
 # The sampleID of the pileup file should be the same as the name of the same sample in the ped / map file.
