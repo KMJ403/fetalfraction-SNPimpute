@@ -2,7 +2,8 @@
 ###########################################################################################################################
 # fetalfraction-SNPimpute.py version 1.0
 # Python 2.7.6
-# Author: Minjeong Kim
+# Author: Minjeong Kim 
+# Contact: k201624292@ajou.ac.kr
 # This code is for estimating fetal fraction using imputed PLINK(ped/map) files.
 # * Naming rules : sampleID.pileup / chrN.ped / chrN.map (For ped and map files, they must have the format 'chrN.map' and 'chrN.ped')
 # The sampleID of the pileup file should be the same as the name of the same sample in the ped / map file.
@@ -147,7 +148,7 @@ def cal_ff(sampleID):   # input : sampleID_match_list, sampleID_A, sampleID_B
     NMA_fraction = (FF[1]/(FF[0]+FF[1]))*100  # fraction of non maternal alleles = (B/(A+B))*100
     # ** This parameter applies to imputation using 1000 Genome phase3. **
     # ** Please use 'Fetal_fraction=10.54*NMA_fraction-15.42' for HRC v1.1. **
-    Fetal_fraction = 5.761*NMA_fraction-17.363
+    Fetal_fraction = 5.76*NMA_fraction-17.36
     output.write('non maternal alleles fraction'+'\t'+'fetal fraction'+'\n')
     output.write(str(NMA_fraction)+'\t'+str(Fetal_fraction))
 ###########################################################################################################################

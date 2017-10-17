@@ -3,6 +3,7 @@
 # maf-filtering.py version 1.0
 # Python 2.7.6
 # author: Minjeong Kim
+# Contact: k201624292@ajou.ac.kr
 # This code is for maf filtering.
 # * command example : python maf-filtering_v1.py -vcf imputation_chrN.vcf -maf 0.07
 # -vcf : Input the imputed vcf file.
@@ -13,7 +14,7 @@ import sys
 
 def match(vcf_file, maf_value):
     output = open(maf_value+'_'+vcf_file,'w+')
-    input = open(vcf_file,'r')    # Open the imputation_chrN.vcf
+    input = open(vcf_file,'r')    # Open the imputation_chr3.vcf
     maf_value = float(maf_value)
     for line in input:
         arr = line.split('\t')
@@ -25,7 +26,7 @@ def match(vcf_file, maf_value):
             temp = arr[7].split(';')
             maf = temp[1].split('=')
             maf = float(maf[1])
-            if maf>maf_value:
+            if maf>=maf_value:
                 output.write(line)
     print('maf-filtering finish.')
     input.close()

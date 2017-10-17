@@ -3,6 +3,7 @@
 # ped-reformat.py version 1.0
 # Python 2.7.6
 # author: Minjeong Kim
+# Contact: k201624292@ajou.ac.kr
 # This code modifies the format of the ped file.
 # * command example : python ped-reformat_v1.py chrN.ped
 # output : re_chrN.ped
