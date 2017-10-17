@@ -54,7 +54,7 @@ A detailed description of command line options can be found at [here](https://ge
 
 Filtering
 -
-MAF filtering code can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute).
+MAF filtering code can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute/tree/master/code).
 
 Command line options :
 
@@ -80,12 +80,12 @@ Command line options :
 	plink --file sample_chrN.filter1 --geno 0.1 --mind 0.1 --hwe 1e-3 --recode --out sample_chrN.filter2 --noweb
 **Modify the format of the ped file.**
 
-Reformatting code can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute).
+Reformatting code can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute/tree/master/code).
 
 	python ped-reformat_v1.py sample_chrN.filter2.ped
 Estimation fetal fraction
 -
-Using imputed PLINK(ped/map) files. Estimating fetal fraction code can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute).
+Using imputed PLINK(ped/map) files. Estimating fetal fraction code can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute/tree/master/code).
 
 Command line options :
 
@@ -99,6 +99,6 @@ Command line options :
 
 
 	python fetalfraction-SNPimpute_v1.py -N sampleID.pileup -I /input/data/ -O /output/data/
-We provide 'pileup file' and 'imputed(using 1000GP3) PLINK file' to help you understand the input values. These files contain only information about chromosome 3. 
+We provide 'pileup file' and 'imputed(using 1000GP3) PLINK file' to help you understand the input values. These files contain only information about chromosome 22. 
 
-Sample source can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute).
+Sample source can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute/tree/master/sample).
