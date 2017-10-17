@@ -13,7 +13,7 @@ import sys
 
 def match(vcf_file, maf_value):
     output = open(maf_value+'_'+vcf_file,'w+')
-    input = open(vcf_file,'r')    # Open the imputation_chr3.vcf
+    input = open(vcf_file,'r')    # Open the imputation_chrN.vcf
     maf_value = float(maf_value)
     for line in input:
         arr = line.split('\t')
