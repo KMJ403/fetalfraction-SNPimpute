@@ -164,6 +164,7 @@ def cal_ff(sampleID):   # input : sampleID_match_list, sampleID_A, sampleID_B
     # ** This parameter applies to imputation using 1000 Genome phase3. **
     # ** Please use 'Fetal_fraction=10.54*NMA_fraction-15.42' for HRC v1.1. **
     # ** This parameter is not absolute and may vary depending on the fitering method and the state of the data. **
+    # ** Please use your data to calculate new parameters!! **
     Fetal_fraction = 5.76*NMA_fraction-17.36
     output.write('non maternal alleles fraction'+'\t'+'fetal fraction'+'\n')
     output.write(str(NMA_fraction)+'\t'+str(Fetal_fraction))
