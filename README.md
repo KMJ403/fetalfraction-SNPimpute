@@ -98,7 +98,7 @@ Command line options :
 **Estimation fetal fraction**
 
 
-	python fetalfraction-SNPimpute_v1.py -N sampleID.pileup -I /input/data/ -O /output/data/
+	python fetalfraction-SNPimpute_v2.py -N sampleID.pileup -I /input/data/ -O /output/data/
 We provide 'pileup file' and 'imputed(using 1000GP3) PLINK file' to help you understand the input values. These files contain only information about chromosome 22. 
 
 Sample source can be downloaded from [here](https://github.com/KMJ403/fetalfraction-SNPimpute/tree/master/sample).
